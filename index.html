@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="Style Sheets/styles.css">
-    <link rel="stylesheet" href="Style Sheets/formStyles.css">
+    <link rel="stylesheet" href="Style Sheets/whyUsSection.css">
+    <link rel="stylesheet" href="Style Sheets/formSectionStyle.css">
+    <link rel="stylesheet" href="Style Sheets/teamStyles.css">
 </head>
 <body>
+
+  <!-- Hero Section Starts here -->
     <div class="hero-section">
         <img src="Assets/HeroBG.jpg" width="100%" alt="">
         <div class="overlay">
@@ -25,104 +29,108 @@
     <div class="arrow-down">&#9660;</div>
 
     </div>
-
-    <div id="getstarted" class="form-section">
-        
-        <div class="form-pic">
-            
-        </div>
-
-        
-            <div id="container" class="form-container">
-                <h1>Get a free Consultation</h1>
-                
-                <form action="#" method="post" id="contact_form">
-                  <div class="name">
-                    <label for="name"></label>
-                    <input type="text" placeholder="Name" name="name" id="name_input" required>
-                  </div>
-                  <div class="email">
-                    <label for="email"></label>
-                    <input type="email" placeholder="E-mail" name="email" id="email_input" required>
-                  </div>
-                  <div class="telephone">
-                    <label for="name"></label>
-                    <input type="text" placeholder="Number" name="telephone" id="telephone_input" required>
-                  </div>
-                  <div class="subject">
-                    <label for="subject"></label>
-                    <select placeholder="Service Required" name="subject" id="subject_input" required>
-                      <option disabled hidden selected>Service Required</option>
-                      <option>Mainland</option>
-                      <option>Offshore</option>
-                      <option>Freezone</option>
-                      <option>Job Seeker</option>
-
-                    </select>
-                  </div>
-                  <div class="message">
-                    <label for="message"></label>
-                    <textarea name="message" placeholder="Tell us more about your business" id="message_input" cols="5" rows="3" required></textarea>
-                  </div>
-
-                  <div class="privacy">
-                    <p>By Clicking submit you accept the Privacy Policies and Terms and </p>
-                  </div>
-                  <div class="submit">
-                    <input type="submit" value="Send Message" id="form_button" />
-                  </div>
-                </form><!-- // End form -->
-              </div><!-- // End #container -->
-        
-
-    </div>
-
-    
-    
-  <div id="whyus" class="feat bg-gray pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="section-head col-sm-12">
-          <h4>Why Choose <span>Us?</span></h4>
-          <p>Shuraa believes in creating an extended scope for organisations so that they can be a part of Dubai's
-            booming economic module. We believe that delivering outstanding client services is paramount to our success,
-            and our entire business is organised to achieve this goal.</p>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_three"><i style="color:#ca3728;"
-            class="fa fa-laptop"></i></span>
-        <h6>Free Annual PRO
-          Services</h6>
-        <p>With the help of our PRO services in Dubai and throughout the UAE, Shuraa Business Setup makes meeting
-          your legal obligations quick, precise, and affordable.</p>
-      </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_three"><i style="color:#ca3728;"
-                class="fa fa-lock"></i></span>
-            <h6>Investor Protection
-              Contract</h6>
-            <p>With professionals, we offer one of the best document-clearing services in Dubai.</p>
-          </div>
-        </div>
+  <!-- Hero Section Ends here -->
 
 
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_six"><i style="color:#ca3728;" class="fa fa-file"></i></span>
-            <h6>One Hand Documentation
-              Clearance</h6>
-            <p>Our investor protection contracts are valid in all UAE courts, and we provide all these services
-              throughout the Emirates.</p>
-          </div>
-        </div>
+<!-- Form and picture section starts here-->
+    <div class="get-in-touch">
+      <img class="form-image" src="Assets/form-left.jpg" alt="">
+      
+      <div class="form-container">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+          
+          <input type="text" id="name" name="name" placeholder="Name">
+  
+          
+          <input type="email" id="email" name="email" placeholder="Email" required>
+  
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+  
+          
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Select Service</option>
+            <option value="mainland">Mainland</option>
+            <option value="offshore">Offshore</option>
+            <option value="freezone">Freezone</option>
+            <option value="jobseeker">Job Seeker</option>
+          </select>
+          
+          
+          <textarea id="message" name="message" rows="4" placeholder="Tell us more about your business:" required></textarea>
+  
+          <p style="text-align: left; padding-left: 6px;">By clicking the submit you agree to the Terms & Conditions and Privacy Policies.</p>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
+<!-- Form and picture section ENDS here-->
+
+
+<!-- Why Section Starts here -->
+    <div id="whyus" class="feat bg-gray pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="section-head col-sm-12">
+              <h4>Why Choose <span>Us?</span></h4>
+              <p>Shuraa believes in creating an extended scope for organisations so that they can be a part of Dubai's
+                booming economic module. We believe that delivering outstanding client services is paramount to our success,
+                and our entire business is organised to achieve this goal.</p>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_three"><i style="color:#ca3728;"
+                class="fa fa-laptop"></i></span>
+            <h6>Free Annual PRO
+              Services</h6>
+            <p>With the help of our PRO services in Dubai and throughout the UAE, Shuraa Business Setup makes meeting
+              your legal obligations quick, precise, and affordable.</p>
+          </div>
+            </div>
+    
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_three"><i style="color:#ca3728;"
+                    class="fa fa-lock"></i></span>
+                <h6>Investor Protection
+                  Contract</h6>
+                <p>With professionals, we offer one of the best document-clearing services in Dubai.</p>
+              </div>
+            </div>
+    
+    
+            <div class="col-lg-4 col-sm-6">
+              <div class="item"> <span class="icon feature_box_col_six"><i style="color:#ca3728;" class="fa fa-file"></i></span>
+                <h6>One Hand Documentation
+                  Clearance</h6>
+                <p>Our investor protection contracts are valid in all UAE courts, and we provide all these services
+                  throughout the Emirates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- why section ENDS HERE -->
+
+
+
+<!-- Process Section starts here -->
+  <div id="process" class="ourporcess">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="Assets/ourProcessDesktop.png">
+      <img src="Assets/ourProcessMobile.png" width="100%" alt="">
+    </picture>
   </div>
+<!-- Process Section Ends here -->
+         
 
-    
+
+
+
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
