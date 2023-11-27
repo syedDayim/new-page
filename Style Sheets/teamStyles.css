@@ -1,0 +1,43 @@
+.teams-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.teams-container > h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1A3150;
+    margin-bottom: 20px;
+}
+
+.blue{
+    color:#CA3838; 
+}
+
+
+
+.imagescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.team-card-container{
+    /* border: 2px solid red; */
+    width: 200px;
+    
+}
+
+
+@media (max-width: 640px){
+    .teams-container{
+        margin-top: 150px;
+
+    }
+}
